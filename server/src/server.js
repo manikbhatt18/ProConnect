@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://pro-connect-zeta.vercel.app/",
+  origin: "https://pro-connect-zeta.vercel.app",
   credentials: true,
 }));
 
