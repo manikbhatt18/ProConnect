@@ -7,7 +7,11 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://pro-connect-zeta.vercel.app/",
+  credentials: true,
+}));
+
 app.use(express.json());
 
 // DB Connection
